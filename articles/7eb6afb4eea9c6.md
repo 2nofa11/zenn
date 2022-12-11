@@ -1,5 +1,5 @@
 ---
-title: "簡単なOptionAPIとCompositionAPIの比較（状態データ編）"
+title: "簡単なOptionsAPIとCompositionAPIの比較（状態データ編）"
 emoji: "📢"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vue", "vue3", "JavaScript"]
@@ -8,7 +8,7 @@ published: true
 
 # 状態データについて
 
-## OptionAPI
+## OptionsAPI
 
 - data オプションにて状態データを管理します。
 - data オプションは、以下役割を一度に行います。
@@ -50,7 +50,7 @@ export default {
 
 # コンポーネントの派生データ(算出)について
 
-## OptionAPI
+## OptionsAPI
 
 - computed オプションにて算出プロパティを管理します。
 - computed からリアクティブなデータに依存させることで、再計算を行っています。
@@ -120,6 +120,6 @@ https://sfc.vuejs.org/#eNp9kN1qhEAMhV9lOvTCBX96La5Q+hpzsVbj1q3zQxJtQXz3ZtTS0sIOo
 
 ### this を使用しなくなる。
 
-OptionAPI では、script 内で コンポーネント に登録されたデータを`this.count`として取得します。  
+OptionsAPI では、script 内で コンポーネント に登録されたデータを`this.count`として取得します。  
 一方、CompositionAPI では`count.value`としてデータを取得します。  
 template 内は今まで通り、`count`のみで利用できます。
