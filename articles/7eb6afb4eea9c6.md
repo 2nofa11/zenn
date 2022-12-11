@@ -17,7 +17,13 @@ published: false
 - 例
 
 ```vue
-export default{ data(){ return { count:0 } } }
+<script>
+export default {
+  data() {
+    return { count: 0 };
+  },
+};
+</script>
 ```
 
 皆さんが普段見ているデータの宣言方法ですね。
@@ -29,9 +35,17 @@ export default{ data(){ return { count:0 } } }
 - 例
 
 ```vue
-import {ref} from "vue" export default { setup(){ const count = ref(0) //
-リアクティブシステムに登録 return{ count　　　　　　　　//
-コンポーネントに状態データを登録 } } }
+<script>
+import { ref } from "vue";
+export default {
+  setup() {
+    const count = ref(0); // リアクティブシステムに登録
+    return {
+      count, // コンポーネントに状態データを登録
+    };
+  },
+};
+</script>
 ```
 
 # コンポーネントの派生データ(算出)について
@@ -72,9 +86,9 @@ https://sfc.vuejs.org/#eNp9kNtqwzAMhl/FM7vYoIl3HUJh7DV8US9R23TxAUnpBsHvPjkNoWxQY
 ## CompositionAPI
 
 - computed 関数を使用します。
-- computed 関数は、大入り引数に派生データを算出するための関数をとる高階関数です。
+- computed 関数は、第一引数に派生データを算出するための関数をとる高階関数です。
 - データに変更が行われた差にリアクティブシステムで算出を行います。
-- なお、data と同様 return にて値を component に登録します。
+- なお、data と同様 return にて値を コンポーネント に登録します。
 - 例
 
 ```vue
@@ -103,3 +117,9 @@ https://sfc.vuejs.org/#eNp9kN1qhEAMhV9lOvTCBX96La5Q+hpzsVbj1q3zQxJtQXz3ZtTS0sIOo
 を参照してください。
 
 ## CompositionAPI における注意点
+
+### this を使用しなくなる。
+
+OptionAPI では、script 内で コンポーネント に登録されたデータを`this.count`として取得します。  
+一方、CompositionAPI では`count.value`としてデータを取得します。  
+template 内は今まで通り、`count`のみで利用できます。
