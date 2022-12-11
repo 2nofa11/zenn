@@ -1,9 +1,9 @@
 ---
-title: "最も簡単なOptionAPIとCompositionAPIの比較（状態データ編）"
+title: "簡単なOptionAPIとCompositionAPIの比較（状態データ編）"
 emoji: "📢"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["vue"]
-published: false
+topics: ["vue", "vue3", "JavaScript"]
+published: true
 ---
 
 # 状態データについて
