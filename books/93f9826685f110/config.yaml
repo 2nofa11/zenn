@@ -1,6 +1,6 @@
-title: "TypeScript問題集"
-topics: ["TypeScript"]
-published: false
+title: "TypeScript問題集(WIP)"
+topics: ["TypeScript", "プログラミング", "JavaScript"]
+published: true
 summary: "「TypeScriptについて、なんとなく理解している。けど、実務で使ったことがない」あなたに向けた例題集です。随時問題を追加予定です。"
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
