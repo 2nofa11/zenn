@@ -18,8 +18,7 @@ class Person {
 }
 
 // 以下に、Studentクラスを定義するコードを追加してください
-class Student extends Person {
-}
+class Student extends Person {}
 
 const student = new Student("John", 20, "123456");
 console.log(student.name); // John
@@ -41,9 +40,9 @@ console.log(student.studentId); // 123456
 
 - [生徒情報を出力する:回答例](https://www.typescriptlang.org/ja/play?#code/MYGwhgzhAEAKCmAnCB7AdtA3gKGtNYAtvNALzQBEFA3LtGAOYnkAMtew6EALogK7BuKRAAoCxAFzQeiAJZoGAGnpMpaPoQBGSAJRY6ebgAtZEAHTjm+IvHZ5ox02cZWXdgL7ZP2APQ-ogKdygNBygNYMgIAMAMrcfAAm8GjcgPUMgJcMgJ0MgEkMgFnagJX+gJoMgNEMgM0MgD8MgJMM6YC-8YAFSoDqDIBmDIDyDIAGDICqDIAiDNigkDBRsfHc0PAAHtzxMTAIyOj6eDx9CQCSMWSUNNh0nGgyAkKillIy8koq8Goa2ojKc3GLMQe8R3o49tJ8AA5IYjbKLjp2hiZzNd+ksVsDbh4vOtNjxpNEbgNyGh4AB3aC9BEiCgAKRQRjQFGUACYWMoKABGIkAZgALABWABsFD+nS4KBA8DMIBQDBE4O4Fhsf2gfmguPxrK27M53N5-OcTGFopJktQHK5PL58P6Zn5SyV-kptMZQA)
 
-サブクラスには、親クラスにない新しいプロパティを追加することができることの例です。
+親クラスにない新しいプロパティを追加することができることの例です。
 
-TypeScriptではクラスはあまり使いませんが、書けると表現の幅が広がります。
+TypeScript ではクラスはあまり使いませんが、書けると表現の幅が広がります。
 
 なお、アクセシビリティ修飾子をつけないと`public`になります。
 
