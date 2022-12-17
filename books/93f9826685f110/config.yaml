@@ -7,3 +7,4 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - intro
   - qa-area-of-figure
+  - qa-sub-class
