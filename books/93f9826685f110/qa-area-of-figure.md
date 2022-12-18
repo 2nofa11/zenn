@@ -38,9 +38,11 @@ console.log(area(triangle)); // 50
 
 以下のリンクから実行環境に遷移できます。
 
-出力される値については、「実行」または「Run」ボタンを押してみてください。
-
 - [図形の面積を求める：コード](https://www.typescriptlang.org/ja/play?#code/C4TwDgpgBAygFgQ0lAvFA3gKClUkBcUARAM4COArggE4RFQA+xw1AlggHYDmANnQNzYoAd1YATYHEIcKAWwBGEaoJxwIrLnGDS5i5ZgC+gzADMKHAMbBWAew5QaEBAAoSiArHcQAlDoVKMIQB6IKhAI3TAWS9AJIZACCjAdO9ATQZAaIZAM8VAMBcowHztQFGI5KFaYApqewAGQ0xMCzsSYChyKlpCeCRoNCwcPAhCUkpHIgAaIVEJKSgARhLB1XVNbXHJw2MqjhrcNk5eLs8W1ECO8C2iFnZuPgGh8UlCCamoNQ0ta4WjCuWSGz4AOh4bLmdHFz1Rzebz8KAheZlN4fCDfX7-WguY4bPggsEQgCsZSAA)
+
+皆さんはコメントが書かれてるところに自由に書き込んで、コンソールログから結果を見てみましょう。
+
+「実行」または「Run」ボタンを押してみてください。
 
 ## 回答例
 

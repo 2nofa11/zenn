@@ -30,9 +30,11 @@ console.log(student.studentId); // 123456
 
 以下のリンクから実行環境に遷移できます。
 
-出力される値については、「実行」または「Run」ボタンを押してみてください。
-
 - [生徒情報を出力する:コード](https://www.typescriptlang.org/ja/play?#code/MYGwhgzhAEAKCmAnCB7AdtA3gKGtNYAtvNALzQBEFA3LtGAOYnkAMtew6EALogK7BuKRAAoCxAFzQeiAJZoGAGnpMpaPoQBGSAJRY6ebgAtZEAHTjm+IvHZ5ox02cZWXdgL7ZP2APQ-ogKdygNBygNYMgIAMAMrcfAAm8GjcgPUMgJcMgJ0MgEkMgFnagJX+gJoMgNEMgM0MgD8MgJMM6YC-8YAFSoDqDIBmDIDyDIAGDICqDIAiDNigkDBRsfHc0PAAHtzxMTAIyOj63pxoPNLRcQlk+PAA7tC9y9wiFABSKEZoFMoATCzKFACMZwDMACwArABsFDq0c6gg8GYgKAwRDw+gkLDYPtA-NBDsdOlwUD8-gCgUt+s4mBCoRc4fMEb9-oDgTszET+gBJGKY-y3R6vIA)
+
+皆さんはコメントが書かれてるところに自由に書き込んで、コンソールログから結果を見てみましょう。
+
+「実行」または「Run」ボタンを押してみてください。
 
 ## 回答例
 
