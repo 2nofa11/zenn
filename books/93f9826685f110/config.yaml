@@ -9,3 +9,5 @@ chapters:
   - qa-area-of-figure
   - qa-sub-class
   - qa-template-literal
+  - qa-reduce-sum
+  - qa-reduce-square
