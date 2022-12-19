@@ -6,9 +6,11 @@ price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
   - intro
+  - qa-type-alias
   - qa-area-of-figure
   - qa-sub-class
   - qa-template-literal
   - qa-reduce-sum
   - qa-reduce-square
   - qa-reduce-object
+  - qa-type-alias
