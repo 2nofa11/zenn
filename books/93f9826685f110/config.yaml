@@ -11,3 +11,4 @@ chapters:
   - qa-template-literal
   - qa-reduce-sum
   - qa-reduce-square
+  - qa-reduce-object
