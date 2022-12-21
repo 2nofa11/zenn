@@ -14,3 +14,4 @@ chapters:
   - qa-reduce-square
   - qa-reduce-object
   - qa-type-alias
+  - qa-double-bang
