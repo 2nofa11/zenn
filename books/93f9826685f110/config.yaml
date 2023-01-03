@@ -9,6 +9,7 @@ chapters:
   - qa-type-basic
   - qa-type-union
   - qa-type-narrowing
+  - qa-type-utility
   - qa-area-of-figure
   - qa-sub-class
   - qa-template-literal
