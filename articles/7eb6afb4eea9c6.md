@@ -10,10 +10,10 @@ published: true
 
 ## OptionsAPI
 
-- data オプションにて状態データを管理します。
-- data オプションは、以下役割を一度に行います。
+- dataオプションにて状態データを管理します。
+- dataオプションは、以下役割を一度に行ないます。
   - コンポーネントに状態データを登録
-  - Vue.js のリアクティブシステムに登録
+  - Vue.jsのリアクティブシステムに登録
 - 例
 
 ```vue
@@ -30,8 +30,8 @@ export default {
 
 ## CompositionAPI
 
-- 振る舞いを setup 関数を使って定義するという考え方です。
-- setup 関数の状態データは、データのリアクティブを行わないため、明示的にリアクティブ化を行う必要があります。
+- 振る舞いをsetup関数を使って定義するという考え方です。
+- setup関数の状態データは、データのリアクティブを行なわないため、明示的にリアクティブ化を行なう必要があります。
 - 例
 
 ```vue
@@ -52,8 +52,8 @@ export default {
 
 ## OptionsAPI
 
-- computed オプションにて算出プロパティを管理します。
-- computed からリアクティブなデータに依存させることで、再計算を行っています。
+- computedオプションにて算出プロパティを管理します。
+- computedからリアクティブなデータに依存させることで、再計算を行なっています。
 - 例
 
 ```vue
@@ -85,10 +85,10 @@ https://sfc.vuejs.org/#eNp9kNtqwzAMhl/FM7vYoIl3HUJh7DV8US9R23TxAUnpBsHvPjkNoWxQY
 
 ## CompositionAPI
 
-- computed 関数を使用します。
-- computed 関数は、第一引数に派生データを算出するための関数をとる高階関数です。
-- データに変更が行われた差にリアクティブシステムで算出を行います。
-- なお、data と同様 return にて値を コンポーネント に登録します。
+- computed関数を使用します。
+- computed関数は、第一引数に派生データを算出するための関数をとる高階関数です。
+- データに変更が行なわれた差にリアクティブシステムで算出を行ないます。
+- なお、dataと同様returnにて値をコンポーネントに登録します。
 - 例
 
 ```vue
@@ -120,6 +120,6 @@ https://sfc.vuejs.org/#eNp9kN1qhEAMhV9lOvTCBX96La5Q+hpzsVbj1q3zQxJtQXz3ZtTS0sIOo
 
 ### this を使用しなくなる。
 
-OptionsAPI では、script 内で コンポーネント に登録されたデータを`this.count`として取得します。  
-一方、CompositionAPI では`count.value`としてデータを取得します。  
-template 内は今まで通り、`count`のみで利用できます。
+OptionsAPIでは、script内でコンポーネントに登録されたデータを`this.count`として取得します。  
+一方、CompositionAPIでは`count.value`としてデータを取得します。  
+template内は今まで通り、`count`のみで利用できます。
