@@ -10,10 +10,10 @@ published: true
 
 ## OptionsAPI
 
-- dataオプションにて状態データを管理します。
-- dataオプションは、以下役割を一度に行ないます。
+- data オプションにて状態データを管理します。
+- data オプションは、以下役割を一度に行ないます。
   - コンポーネントに状態データを登録
-  - Vue.jsのリアクティブシステムに登録
+  - Vue.js のリアクティブシステムに登録
 - 例
 
 ```vue
@@ -30,8 +30,8 @@ export default {
 
 ## CompositionAPI
 
-- 振る舞いをsetup関数を使って定義するという考え方です。
-- setup関数の状態データは、データのリアクティブを行なわないため、明示的にリアクティブ化を行なう必要があります。
+- 振る舞いを setup 関数を使って定義するという考え方です。
+- setup 関数の状態データは、データのリアクティブを行なわないため、明示的にリアクティブ化を行なう必要があります。
 - 例
 
 ```vue
@@ -52,13 +52,15 @@ export default {
 
 ## OptionsAPI
 
-- computedオプションにて算出プロパティを管理します。
-- computedからリアクティブなデータに依存させることで、再計算を行なっています。
+- computed オプションにて算出プロパティを管理します。
+- computed からリアクティブなデータに依存させることで、再計算を行なっています。
 - 例
 
 ```vue
 <template>
   <span>{{ message }}</span>
+  <br />
+  <button @click="count++">Click me</button>
 </template>
 
 <script>
@@ -78,22 +80,24 @@ export default {
 ```
 
 実際に動かしたい場合は
-https://sfc.vuejs.org/#eNp9kNtqwzAMhl/FM7vYoIl3HUJh7DV8US9R23TxAUnpBsHvPjkNoWxQY2xJlj/p16zfU6qvE+hGtww+jY5hb4PllpIL+3n2QOROkHNrlogNrblPDC11OCQWG35SRFY9HN008lwovWP38rqYlhF4wqBWz3IXp8DN283N5cq7cnbRp4mhb9bMtYWNs5EOH+PQfUGvnmc+D1QvwKx4kB9Ph3uuDbJFwa1VvdODL71W3qX6QjGIfIErZdcHsropjSpZVst8im/1mTlRYwwduzK0C9URT0asGqWylK2BfPWJ8ZsABWy1CNoYRoJXwAoh9ICAj5h/Uv9xC7ao0vkXAr+ltA==
+https://play.vuejs.org/#eNp9UkFOwzAQ/IqxOICoGqTeolABVQ9wAAQcfWhwtqlbx7bsdYkU5e/YTgg9oEZRsp4Zj2c36eiDMfOjB5rTAqExskRYMsWwcKZUy65rwLmyhr4vsoQk7stmY+ERtSL3XAp+uGOUa6/w5obR5SoipIEiGzRBX2SnJ6jCcSsMhhpaoy2SCrall9hF56rE8uo6lQwtoLeKjCuG6ZT8dlj28dXP4pPrxniEKh+VY/bJZ3LapHRQkcsOd8LNk2FPUIQdF5tTX6bCHVofotIZRce12op6vndahakFa0Ji440REuyrQaGVYzSPcUm4GC2l1N/PCUPrIUQdcL4DfvgH37s2Yoy+WXBgj8DoxGFpa8CBXn+8QBvqiWx05WVQnyHfwWnpY8ZB9uhVFWKf6FLapyZ+EaHqT7duEZT7bSoGjco48KgOv87qTOt/cRfzRdoXBkr7H1Gk3E8=
 
 にてさわってみてください。
 `data`の値を変えるとそれに紐づいて表示メッセージが変わります。
 
 ## CompositionAPI
 
-- computed関数を使用します。
-- computed関数は、第一引数に派生データを算出するための関数をとる高階関数です。
+- computed 関数を使用します。
+- computed 関数は、第一引数に派生データを算出するための関数をとる高階関数です。
 - データに変更が行なわれた差にリアクティブシステムで算出を行ないます。
-- なお、dataと同様returnにて値をコンポーネントに登録します。
+- なお、data と同様 return にて値をコンポーネントに登録します。
 - 例
 
 ```vue
 <template>
   <span>{{ message }}</span>
+  <br />
+  <button @click="count++">Click me</button>
 </template>
 
 <script>
@@ -112,7 +116,7 @@ export default {
 
 こちらも実際に動かしたい場合は
 
-https://sfc.vuejs.org/#eNp9kN1qhEAMhV9lOvTCBX96La5Q+hpzsVbj1q3zQxJtQXz3ZtTS0sIOomFy/E5OFv0cQj5PoEtdMdgwNgy1cYYrCo2rl8UCUXOFda2K7ca4qvgtdBW1OASWerDBI6sFoU9bb8PE0K2qR2+V0eJhtHHwuWk66JtpFG20IuApJKetNtx6R6xaPzlWZyWs5OlknDrO3j2Gkv63T5Kc1LlWl5dxaN+hU4/LRsjnZpxgVTzILw8XAUULFEN0h190FGX64xHP4bBL1viRlzyyhT2uTvWeN7NNyG/knaxQkEqy7g0yuowBI+7IX0rxxhyoLArq27j4G+Uer4VUOcoYMmcOZLNX9B8EKGCjj9E2RiGXM2CG4DpAwHvMP9J/3IiNqfT6BTYvt38=
+https://play.vuejs.org/#eNp9UU1PwzAM/Ssh4rCJaUPabeomYNoBDoCAYw4rrVu6pUmUOKNS1f+Ok3YfB7Soaiy/Z79np+WPxkwPHviCJwi1kSnCSiiBiTOpWrVtDc6lJXRdMouZiH3b2RB4RK3YQyarbL8UPNNe4d2d4Kt1yLAaklnPIX4yu1RQictsZZDiqjbaImstFJNM18Yj5B0rrK6Z4GROcKGgiZwcitRL4gZ5B+jNaBxjgZlWDll0wJaMeo3ux0Kx4fToMA3hR53RaMyWK7aNfiFnt23sMD2k0kPHsKKSmy01ChKWBK0a9IIiMSdnjXAGhZ7ShYt+9NH6+nH5hKMjN0VVTndOK9o8NWQ0abBUSbBvBityK/gijBmaCp5KqX9fYg6th0GUan4g2/+T37km5AR/t+DAHmiHJwxTWwL28ObzFRqKT2Ctcy+JfQX8AKelDx572pNXOdm+4EW3z/FVK1V+uU2DoNxxqGA0MLvIjy+8vjL62e58Oo91tFDe/QFi9+4a
 
 を参照してください。
 
@@ -120,6 +124,6 @@ https://sfc.vuejs.org/#eNp9kN1qhEAMhV9lOvTCBX96La5Q+hpzsVbj1q3zQxJtQXz3ZtTS0sIOo
 
 ### this を使用しなくなる。
 
-OptionsAPIでは、script内でコンポーネントに登録されたデータを`this.count`として取得します。  
-一方、CompositionAPIでは`count.value`としてデータを取得します。  
-template内は今まで通り、`count`のみで利用できます。
+OptionsAPI では、script 内でコンポーネントに登録されたデータを`this.count`として取得します。  
+一方、CompositionAPI では`count.value`としてデータを取得します。  
+template 内は今まで通り、`count`のみで利用できます。
