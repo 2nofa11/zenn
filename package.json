@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "textlint": "npx textlint --rule textlint-rule-preset-smarthr articles/**",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "npx zenn-cli preview",
+    "new:article": "npx zenn-cli new:article",
+    "new:book": "npx zenn-cli new:book"
   },
   "repository": {
     "type": "git",
